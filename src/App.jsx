@@ -1,27 +1,16 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Services from './components/Services'
-import Prices from './components/Prices'
-import Team from './components/Team'
-import Gallery from './components/Gallery'
-import Booking from './components/Booking'
-import Contact from './components/Contact'
-
 function App() {
   return (
-    <div className="min-h-screen bg-black text-white">
-      <Navbar />
-      <Hero />
-      <Services />
-      <Prices />
-      <Team />
-      <Gallery />
-      <Booking />
-      <Contact />
-      <footer className="border-t border-white/10 py-8 text-center text-zinc-400">
-        © {new Date().getFullYear()} Salon Eleganz — Alle Rechte vorbehalten
-      </footer>
-    </div>
+    <main className="min-h-screen grid place-items-center bg-black text-white">
+      <section className="text-center px-6">
+        <div className="mx-auto mb-6 h-16 w-16 rounded-full bg-white/10 flex items-center justify-center">
+          <span className="text-2xl">⛔</span>
+        </div>
+        <h1 className="text-3xl sm:text-4xl font-semibold mb-3">410 Gone</h1>
+        <p className="text-zinc-400 max-w-xl">
+          This site has been permanently removed. No content is available.
+        </p>
+      </section>
+    </main>
   )
 }
 
